@@ -1,5 +1,3 @@
----
-
 #  Secure File Locker Application
 
 The **Secure File Locker Application** is a Python-based security tool designed to protect sensitive files using **AES-256-GCM authenticated encryption**. It provides a user-friendly graphical interface for encrypting and decrypting files securely with strong password-based protection, ensuring confidentiality, integrity, and authenticity of stored data. The application follows secure cryptographic practices and is suitable for academic, personal, and lightweight professional use.
@@ -44,7 +42,7 @@ Secure_File_Locker_App/
 
 ##  Getting Started Locally
 
-### 1️⃣ Clone the Repository
+### 1️ Clone the Repository
 
 ```bash
 git clone https://github.com/kaushikbasnet/Secure_File_Locker_App.git
@@ -53,7 +51,7 @@ cd Secure_File_Locker_App
 
 ---
 
-### 2️⃣ Create and Activate Virtual Environment (Recommended)
+### 2️ Create and Activate Virtual Environment (Recommended)
 
 ```bash
 python -m venv venv
@@ -73,7 +71,7 @@ source venv/bin/activate
 
 ---
 
-### 3️⃣ Install Dependencies
+### 3️ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -81,7 +79,7 @@ pip install -r requirements.txt
 
 ---
 
-### 4️⃣ Run the Application
+### 4️ Run the Application
 
 ```bash
 python -m secure_file_locker.gui
@@ -89,7 +87,7 @@ python -m secure_file_locker.gui
 
 ---
 
-## 📦 Install from PyPI
+##  Install from PyPI
 
 This project is published on **PyPI**.
 
@@ -107,7 +105,7 @@ secure-file-locker
 
 ---
 
-## 🐳 Run Using Docker (GHCR + Docker Desktop)
+##  Run Using Docker (GHCR + Docker Desktop)
 
 The application can also be run using Docker via **GitHub Container Registry (GHCR)**.
 
@@ -118,7 +116,7 @@ The application can also be run using Docker via **GitHub Container Registry (GH
 
 ---
 
-### 1️⃣ Pull the Image from GHCR
+### 1️ Pull the Image from GHCR
 
 ```bash
 docker pull ghcr.io/kaushikbasnet/secure-file-locker:latest
@@ -126,7 +124,7 @@ docker pull ghcr.io/kaushikbasnet/secure-file-locker:latest
 
 ---
 
-### 2️⃣ Run the Container
+### 2️ Run the Container
 
 ```bash
 docker run -it --rm ghcr.io/kaushikbasnet/secure-file-locker:latest
@@ -136,13 +134,13 @@ docker run -it --rm ghcr.io/kaushikbasnet/secure-file-locker:latest
 
 ---
 
-## 🔄 CI/CD & Quality Assurance
+##  CI/CD & Quality Assurance
 
 The project uses **GitHub Actions** for continuous integration and deployment, automatically running tests, validating cryptographic correctness, enforcing pull request reviews, and generating release artifacts. All builds and releases are traceable and reproducible.
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 Run tests locally using:
 
@@ -151,7 +149,8 @@ pytest
 ```
 
 
-## 📊 Badges
+##  Badges
 
 [![PyPI](https://img.shields.io/pypi/v/secure-file-locker.svg)](https://pypi.org/project/secure-file-locker/)
+
 

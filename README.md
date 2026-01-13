@@ -20,23 +20,44 @@ The **Secure File Locker Application** is a Python-based security tool designed 
 
 ```text
 Secure_File_Locker_App/
+├── .github/
+│   └── workflows/
+│       ├── python-ci.yml            # Continuous Integration workflow
+│       └── security_scan.yml        # Automated security analysis
+│
+├── build/
+│   └── secure_file_locker/           # PyInstaller build artifacts
+│       ├── Analysis-00.toc
+│       ├── EXE-00.toc
+│       ├── PKG-00.toc
+│       ├── PYZ-00.pyz
+│       ├── PYZ-00.toc
+│       ├── base_library.zip
+│       ├── secure_file_locker.pkg
+│       ├── warn-secure_file_locker.txt
+│       └── xref-secure_file_locker.html
+│
+├── dist/
+│   ├── secure_file_locker-1.0.0-py3-none-any.whl   # Built wheel package
+│   └── secure_file_locker-1.0.0.tar.gz             # Source distribution
+│
+├── secure_file_locker.egg-info/    # Package metadata
+│   ├── PKG-INFO
+│   ├── SOURCES.txt
+│   ├── dependency_links.txt
+│   ├── entry_points.txt
+│   ├── requires.txt
+│   └── top_level.txt
+│
 ├── secure_file_locker/
 │   ├── __init__.py
-│   ├── crypto_utils.py        # AES-GCM encryption & decryption logic
-│   ├── password_utils.py      # Password validation and key derivation
-│   ├── file_handler.py        # Secure file I/O operations
-│   └── gui.py                 # Graphical user interface
-├── tests/
-│   ├── test_crypto.py
-│   ├── test_password.py
-│   └── test_file_ops.py
-├── .github/
-│   └── workflows/             # GitHub Actions CI/CD pipelines
-├── requirements.txt
-├── setup.py
-├── README.md
-└── LICENSE
-```
+│   ├── main.py                     # Application entry point
+│   └── README.md                   # Module-level documentation
+│
+├── requirements.txt                # Project dependencies
+├── setup.py                        # Package configuration
+├── secure_file_locker.spec         # PyInstaller configuration
+└── README.md                       # Project documentation
 
 ---
 
@@ -152,6 +173,7 @@ pytest
 ##  Badges
 
 [![PyPI](https://img.shields.io/pypi/v/secure-file-locker.svg)](https://pypi.org/project/secure-file-locker/)
+
 
 
 
